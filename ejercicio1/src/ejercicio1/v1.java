@@ -118,6 +118,7 @@ public class v1 extends JFrame implements ActionListener {
 			contentPane.add(scrollPane);
 			{
 				TXTs = new JTextArea();
+				TXTs.setText("verificando");
 				scrollPane.setViewportView(TXTs);
 			}
 		}
@@ -171,5 +172,10 @@ public class v1 extends JFrame implements ActionListener {
 			calculadora c = new calculadora(num1, num2);
 			TXTs.setText("");
 			TXTs.append("La suma de dos enteros es: "+c.Sumar(num1, num2));
+			
+		}catch (Exception e2) {
+			JOptionPane.showConfirmDialog(this, "ingrese numneros reales");
 		}
-}}
+
+	}
+}
